@@ -44,15 +44,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
-    $(LOCAL_PATH)/proprietary/lib/libarcsoft_flawlessface.so:system/lib/libarcsoft_flawlessface.so \
     $(LOCAL_PATH)/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so \
     $(LOCAL_PATH)/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
-    $(LOCAL_PATH)/proprietary/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
     $(LOCAL_PATH)/proprietary/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
-    $(LOCAL_PATH)/proprietary/lib/libarcsoft_skin_soften.so:system/lib/libarcsoft_skin_soften.so \
-    $(LOCAL_PATH)/proprietary/lib/libmmcamera_cac.so:system/lib/libmmcamera_cac.so \
     $(LOCAL_PATH)/proprietary/lib/libmmcamera_cac2_lib.so:system/lib/libmmcamera_cac2_lib.so \
-    $(LOCAL_PATH)/proprietary/lib/libmmcamera_fidelix_eeprom.so:system/lib/libmmcamera_fidelix_eeprom.so \
     $(LOCAL_PATH)/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     $(LOCAL_PATH)/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
     $(LOCAL_PATH)/proprietary/lib/libmmcamera2_stats_algorithm.so:system/lib/libmmcamera2_stats_algorithm.so \
@@ -90,8 +85,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libaec_algo_front.so:system/lib/libaec_algo_front.so \
     $(LOCAL_PATH)/proprietary/lib/libaec_algo_rear.so:system/lib/libaec_algo_rear.so \
     $(LOCAL_PATH)/proprietary/lib/libaf_algo_rear.so:system/lib/libaf_algo_rear.so \
-    $(LOCAL_PATH)/proprietary/lib/libawb_algo_front.so:system/lib/libawb_algo_front.so \
-    $(LOCAL_PATH)/proprietary/lib/libawb_algo_rear.so:system/lib/libawb_algo_rear.so \
+    $(LOCAL_PATH)/proprietary/lib/libawb_algo_front_al.so:system/lib/libawb_algo_front_al.so \
+    $(LOCAL_PATH)/proprietary/lib/libawb_algo_rear_al.so:system/lib/libawb_algo_rear_al.so \
     $(LOCAL_PATH)/proprietary/lib/libchromatix_imx135_common.so:system/lib/libchromatix_imx135_common.so \
     $(LOCAL_PATH)/proprietary/lib/libchromatix_imx135_common_1080p_b.so:system/lib/libchromatix_imx135_common_1080p_b.so \
     $(LOCAL_PATH)/proprietary/lib/libchromatix_imx135_common_1080p_s.so:system/lib/libchromatix_imx135_common_1080p_s.so \
@@ -122,7 +117,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k5e3yx_preview.so:system/vendor/lib/libchromatix_s5k5e3yx_preview.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k5e3yx_snapshot.so:system/vendor/lib/libchromatix_s5k5e3yx_snapshot.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k5e3yx_video.so:system/vendor/lib/vendor/lib/libchromatix_s5k5e3yx_video.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k6a3yx_zsl.so:system/vendor/lib/libchromatix_s5k6a3yx_zsl.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k5e3yx_vt.so:system/vendor/lib/libchromatix_s5k5e3yx_vt.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k5e3yx_vt_hd.so:system/vendor/lib/libchromatix_s5k5e3yx_vt_hd.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_common.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_common.so \
@@ -191,8 +185,8 @@ PRODUCT_COPY_FILES += \
 
 # Graphics firmware
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a420_pfp.fw \
-    $(LOCAL_PATH)/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a420_pm4.fw
+    $(LOCAL_PATH)/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw
 
 # IPC router security
 PRODUCT_COPY_FILES += \
