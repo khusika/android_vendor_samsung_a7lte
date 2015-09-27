@@ -25,24 +25,51 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
     $(LOCAL_PATH)/proprietary/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord_zoom.so:system/lib/libsamsungRecord_zoom.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_SamsungVAD_v01007.so:system/lib/lib_SamsungVAD_v01007.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_DNSe_NRSS_ver226.so:system/lib/lib_DNSe_NRSS_ver226.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
+    $(LOCAL_PATH)/proprietary/lib/libmysound.so:system/lib/libmysound.so \
+    $(LOCAL_PATH)/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
+    $(LOCAL_PATH)/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
+    $(LOCAL_PATH)/proprietary/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     $(LOCAL_PATH)/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     $(LOCAL_PATH)/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
     $(LOCAL_PATH)/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
-    $(LOCAL_PATH)/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
     $(LOCAL_PATH)/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     $(LOCAL_PATH)/proprietary/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
-    $(LOCAL_PATH)/proprietary/lib/libtfa9895.so:system/lib/libtfa9895.so
+    $(LOCAL_PATH)/proprietary/lib/libtfa9895.so:system/lib/libtfa9895.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/btnvtool:system/bin/btnvtool \
     $(LOCAL_PATH)/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(LOCAL_PATH)/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so
+
+# FM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -156,10 +183,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
+    $(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    $(LOCAL_PATH)/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
 
 # GPS
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     $(LOCAL_PATH)/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     $(LOCAL_PATH)/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -187,6 +218,13 @@ PRODUCT_COPY_FILES += \
 
 # Graphics firmware
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     $(LOCAL_PATH)/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     $(LOCAL_PATH)/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw
 
@@ -205,7 +243,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
+    $(LOCAL_PATH)/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
 
 # NFC Firmware
 PRODUCT_COPY_FILES += \
@@ -223,17 +263,29 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+
+# Perfd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/perfd:system/bin/perfd \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
+
+# Postprocessing
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libdisp-aba.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libdisp-aba.so \
 
 # Radio
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     $(LOCAL_PATH)/proprietary/bin/qmuxd:system/bin/qmuxd \
     $(LOCAL_PATH)/proprietary/bin/radish:system/bin/radish \
     $(LOCAL_PATH)/proprietary/bin/rfs_access:system/bin/rfs_access \
     $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
     $(LOCAL_PATH)/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     $(LOCAL_PATH)/proprietary/bin/netmgrd:system/bin/netmgrd \
+    $(LOCAL_PATH)/proprietary/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     $(LOCAL_PATH)/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     $(LOCAL_PATH)/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
@@ -243,13 +295,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
+    $(LOCAL_PATH)/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
+    $(LOCAL_PATH)/proprietary/lib/libalgobsx.so:system/lib/libalgobsx.so
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -257,8 +315,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
 
+# Misc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/ssr_diag:system/bin/ssr_diag \
+    $(LOCAL_PATH)/proprietary/bin/ssr_setup:system/bin/ssr_setup \
+    $(LOCAL_PATH)/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
+    $(LOCAL_PATH)/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
+    $(LOCAL_PATH)/proprietary/lib/libatparser.so:system/lib/libatparser.so
+
+# Firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
+    $(LOCAL_PATH)/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
+    $(LOCAL_PATH)/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
+    $(LOCAL_PATH)/proprietary/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
+
 # Time services
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/time_daemon:system/bin/time_daemon \
     $(LOCAL_PATH)/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    $(LOCAL_PATH)/proprietary/lib/libcommon_time_client.so:system/lib/libcommon_time_client.so
